@@ -8,7 +8,7 @@ Metrics to be considered when grouping neighbourhoods include:
 - The total number of important venues in each neighbourhood. 
 - Additional metrics: The crime rate, total population, unemployment rate, and Pakistani population in each neighbourhood are the primary metrics. Meanwhile, housing rents will be considered as a secondary metric.
 
-### Data Collection
+### Data 
 
 ### Analysis
 
@@ -21,7 +21,7 @@ Metrics to be considered when grouping neighbourhoods include:
 <img src="https://github.com/raofida75/Best-neighbourhoods-to-settle-in-Toronto-/blob/main/Dashboard.png" width="1000"/>
 </p>
 
-### Analyzing Results
+#### Analyzing Results
 <b>Most Desirable Neighbourhoods:</b> These neighbourhoods should be considered if you are looking for less expensive apartments as well as a low crime and unemployment rate. Some of the most desirable neighbourhoods in Toronto are: Banbury-Don Mills, Etobicoke West Mall, Runnymede-Bloor West Village etc.
 
 Desirable Neighbourhoods with large number of venues : Greenwood-Coxell is the only neighbourhood with a large number of venues while also having a low crime and unemployment rate. Furthermore, the rent in this area is also under $1700.
