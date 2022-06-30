@@ -13,6 +13,9 @@ Metrics to be considered when grouping neighbourhoods include:
 ### Analysis
 
 ### Clustering
-p = "https://public.tableau.com/app/profile/fida.hussain.abbas.rao/viz/TopNeighbourhoodsinToronto/Dashboard1?:embed=yes&:display_count=yes&:showVizHome=no"  
+
 ### Results
-<iframe seamless frameborder="0" src=p width = '650' height = '450' scrolling='yes'></iframe>
+
+<p align="center">
+<img src="https://github.com/raofida75/Best-neighbourhoods-to-settle-in-Toronto-/blob/main/Dashboard.png" width="1000"/>
+</p>
