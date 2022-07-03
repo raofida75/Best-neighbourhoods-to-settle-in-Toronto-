@@ -1,5 +1,5 @@
-# Best-neighbourhoods-to-settle-in-Toronto
-[Link to the notebook]()
+# Top-neighbourhoods-in-Toronto
+[Link to the notebook](https://nbviewer.org/github/raofida75/Top-neighbourhoods-in-Toronto/blob/main/Top%20neighbourhoods%20in%20Toronto.ipynb)
 
 In 2019, Canada had the eighth largest immigrant population, with 35 percent settling in Toronto. Toronto is divided into 140 distinct districts. In this project, I will analyse and classify Toronto neighbourhoods based on their desirability using Machine Learning and Data Visualization.
 
