@@ -7,8 +7,15 @@ In 2019, Canada had the eighth largest immigrant population, with 35 percent set
 
 Metrics to be considered when grouping neighbourhoods include: 
 - The total number of important venues in each neighbourhood. 
-- Additional metrics: The crime rate, total population, unemployment rate, and Pakistani population in each neighbourhood are the primary metrics. Meanwhile, housing rents will be considered as a secondary metric.
+- Additional metrics: The crime rate, total population, unemployment rate in each neighbourhood are the primary metrics. Meanwhile, housing rents will be considered as a secondary metric.
 
+### Approach
+
+Part - I
+Get the venues in different neighbourhoods of Toronto using foursquare API, Now clean those venues and then define essential venues to retain only important venues. Now apply KMeans Clustering to the total venues data after determining the optimum cluster number using the elbow method. Visualize the clusters wrt to the neighborhoods in order of the increasing venues.
+
+Part - II
+Load and clean data for the primary metrics. Then, apply KMeans clustering algorithms to the data. Classify the clusters according to the mean of each metric with categories [High, Medium and Low]. The best cluster is the cluster that gives the lowest rates for the primary metrics. Use the data for the best cluster only now for the secondary metric. Now load the housing rents for only those neighbourhoods which had low primary metrics. Apply clustering to the resulting data. Give categorical variables to the clusters obtained. Lastly, sisualize the final results.
 
 ### Results
 [Link to the interactive dashboard](https://public.tableau.com/app/profile/fida.hussain.abbas.rao/viz/TopNeighbourhoodsinToronto/Dashboard1?publish=yes)
