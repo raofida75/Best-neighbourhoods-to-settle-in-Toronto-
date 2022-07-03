@@ -3,6 +3,11 @@
 
 In 2019, Canada had the eighth largest immigrant population, with 35 percent settling in Toronto. Toronto is divided into 140 distinct districts. In this project, I will analyse and classify Toronto neighbourhoods based on their desirability using Machine Learning and Data Visualization.
 
+## Dataset
+<b> Toronto neighbourhood profile dataset </b>: It contains various characteristics such as neighbourhood ID, total population, and so on for 140 neighbourhoods in Toronto.
+<b> Neighbourhood.geojson dataset</b>: It contains the longitude and latitude of each neighbourhood.
+<b> Neighbourhood crime rates </b>: It contains the crime rate for different offences in each neighbourhoods. 
+
 ## Methodology
 
 Metrics to be considered when grouping neighbourhoods include: 
@@ -11,13 +16,17 @@ Metrics to be considered when grouping neighbourhoods include:
 
 ### Approach
 
-Part - I
+#### Part - I : Clustering wrt to the total venues.
+Use Foursquare API to get top 100 venues in each neighbourhood of Toronto. Venues will be limited to the radius of 500 meters only. Finally, save the obtained dataframe so that I don't have to retrieve the data from the API every time I run this notebook. Now clean the venue categories by grouping the relevant categories together using the following link:
 
-Get the venues in different neighbourhoods of Toronto using foursquare API, Now clean those venues and then define essential venues to retain only important venues. Now apply KMeans Clustering to the total venues data after determining the optimum cluster number using the elbow method. Visualize the clusters wrt to the neighborhoods in order of the increasing venues.
+https://developer.foursquare.com/docs/categories
 
-Part - II
+Now I will extract the essential venues such as Cafe, Restaurant, Park, Grocery / Stores, Hair Salon, Exercise, and Bank and remove the other venues. Furthermore, I will group each neighbourhood into meaningful, homogeneous clusters based on the number of venues. We'll look at the inertia at various k values to identify the ideal k value for k-means. When we plot distortion against k, there will be a k value where we see the bending. This is the ideal number of clusters.The optimum number of clusters were found to be 3.Based on the number of essential venues, we will now group the neighbourhoods using the k-Means clustering algorithm. We will divide the neighbourhoods into three distinct groups. Lastly, Visualize the clusters wrt to the neighborhoods in order of the increasing venues using the choropleth map.
 
-Load and clean data for the primary metrics. Then, apply KMeans clustering algorithms to the data. Classify the clusters according to the mean of each metric with categories [High, Medium and Low]. The best cluster is the cluster that gives the lowest rates for the primary metrics. Use the data for the best cluster only now for the secondary metric. Now load the housing rents for only those neighbourhoods which had low primary metrics. Apply clustering to the resulting data. Give categorical variables to the clusters obtained. Lastly, sisualize the final results.
+#### Part - II : Clustering wrt to the primary and secondary metrics 
+
+Load and clean data for the primary metrics. The primary metrics are total population, crime rate, and unemployment rate. After loading the data, clean it up and convert the numeric data from object datatype to int or float accordingly. Thereafter, transform all of the features to a similar range (between 0 and 1) using min max scaler. Before applying machine learning models, it is critical to standardise the data because if one feature has very large values, it will dominate over other features. As a result of standardisation, all features will have the same influence. Then, apply KMeans clustering algorithms to the data. Classify the clusters according to the mean of each metric with categories [High, Medium and Low]. Only the neighbourhoods with a 'LOW' crime rate, population, and unemployment rate from the previous section will be used in the following section. We will now group them according to housing rents. There are 69 neighbourhoods with lower primary metrics, while the rest have either a high unemployment rate or a high crime rate. Those neighbourhoods will be labelled as Least Desirable.
+Now load the housing rents for only those neighbourhoods which had low primary metrics amd apply KMeans clustering to the resulting data. Cluster 2 has the lowest housing rent hence it contains the most desirable neighbourhoods. While cluster 0 has comparatively higher rents hence it is not as desirable; however, still better than the neighbourhoods in cluster 1.Cluster 1 has the highest housing rents, as a result it is semi desirable.
 
 ### Results
 [Link to the interactive dashboard](https://public.tableau.com/app/profile/fida.hussain.abbas.rao/viz/TopNeighbourhoodsinToronto/Dashboard1?publish=yes)
