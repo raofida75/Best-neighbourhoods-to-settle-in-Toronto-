@@ -4,9 +4,14 @@
 In 2019, Canada had the eighth largest immigrant population, with 35 percent settling in Toronto. Toronto is divided into 140 distinct districts. In this project, I will analyse and classify Toronto neighbourhoods based on their desirability using Machine Learning and Data Visualization.
 
 ## Dataset
+
 <b> Toronto neighbourhood profile dataset </b>: It contains various characteristics such as neighbourhood ID, total population, and so on for 140 neighbourhoods in Toronto.
+
 <b> Neighbourhood.geojson dataset</b>: It contains the longitude and latitude of each neighbourhood.
-<b> Neighbourhood crime rates </b>: It contains the crime rate for different offences in each neighbourhoods. 
+
+<b> Neighbourhood crime rates </b>: It contains the crime rate for different offences in each neighbourhood. 
+
+<b> Housing rent dataset </b>: This dataset contains the median housing rent for 1 bedroom in each neighbourhood.
 
 ## Methodology
 
@@ -26,6 +31,7 @@ Now I will extract the essential venues such as Cafe, Restaurant, Park, Grocery 
 #### Part - II : Clustering wrt to the primary and secondary metrics 
 
 Load and clean data for the primary metrics. The primary metrics are total population, crime rate, and unemployment rate. After loading the data, clean it up and convert the numeric data from object datatype to int or float accordingly. Thereafter, transform all of the features to a similar range (between 0 and 1) using min max scaler. Before applying machine learning models, it is critical to standardise the data because if one feature has very large values, it will dominate over other features. As a result of standardisation, all features will have the same influence. Then, apply KMeans clustering algorithms to the data. Classify the clusters according to the mean of each metric with categories [High, Medium and Low]. Only the neighbourhoods with a 'LOW' crime rate, population, and unemployment rate from the previous section will be used in the following section. We will now group them according to housing rents. There are 69 neighbourhoods with lower primary metrics, while the rest have either a high unemployment rate or a high crime rate. Those neighbourhoods will be labelled as Least Desirable.
+
 Now load the housing rents for only those neighbourhoods which had low primary metrics amd apply KMeans clustering to the resulting data. Cluster 2 has the lowest housing rent hence it contains the most desirable neighbourhoods. While cluster 0 has comparatively higher rents hence it is not as desirable; however, still better than the neighbourhoods in cluster 1.Cluster 1 has the highest housing rents, as a result it is semi desirable.
 
 ### Results
