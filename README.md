@@ -52,7 +52,11 @@ Least Desirable Neighbourhoods: Avoid these neighbourhoods if possible because o
 
 
 	neighbourhood_id	median_rent
+
 label		
+
 0	49	1710.612245
+
 1	14	2118.571429
+
 2	6	1064.166667
