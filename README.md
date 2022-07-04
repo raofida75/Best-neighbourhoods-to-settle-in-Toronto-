@@ -34,11 +34,11 @@ Load and clean the data for the primary metrics from the neighbourhood profile d
 
 After loading and cleaning the housing rents dataset, extract the data for only those neighbourhoods which had low primary metrics amd apply KMeans clustering on the resulting data. Cluster 2 has the lowest housing rent hence it contains the most desirable neighbourhoods. While cluster 0 has comparatively higher rents hence it is not as desirable; however, still better than the neighbourhoods in cluster 1. Cluster 1 has the highest housing rents, as a result it is semi desirable.
 
-| label | neighbourhood_id | median_rent |
+| label | neighbourhood_count | median_rent |
 | --- | --- | --- |
-| 0 | Gaussian | .843 |
-| 0 | Gaussian | .843 |
-| 0 | Gaussian | .843 |
+| 0 | 49 | 1710.612 |
+| 1 | 14 | 2118.571 |
+| 2 | 6 | 1064.1667 |
 
 
 ### Results
