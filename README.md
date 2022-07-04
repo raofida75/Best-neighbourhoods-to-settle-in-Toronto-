@@ -51,12 +51,10 @@ Neighbourhoods with a large amount of venues: Only 5% of Toronto neighbourhoods 
 Least Desirable Neighbourhoods: Avoid these neighbourhoods if possible because of high rates of crime and unemployment. Almost 50% of the neighbourhoods lie in this category. 
 
 
-	neighbourhood_id	median_rent
+label	neighbourhood_id	median_rent		
 
-label		
+0	49			1710.612245
 
-0	49	1710.612245
+1	14			2118.571429
 
-1	14	2118.571429
-
-2	6	1064.166667
+2	6			1064.166667
