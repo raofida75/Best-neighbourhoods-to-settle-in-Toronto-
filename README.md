@@ -10,6 +10,15 @@
 [Link to the notebook](https://nbviewer.org/github/raofida75/Top-neighbourhoods-in-Toronto/blob/main/Top%20neighbourhoods%20in%20Toronto.ipynb)
 </i></div>
 
+## Table of Contents
+
+1. [Datasets](#datasets)     
+2. [Metric for a desirable neighbourhood](#metric-for-a-desirable-neighbourhood)  
+3. [Methodology](#methodology) 
+4. [Results](#results)
+5. [Summary](#summary)
+
+
 ## Datasets
 
 - <b> neighbourhood-profiles-2016-140-model.csv </b>: It contains various characteristics such as neighbourhood ID, total population, and so on for 140 neighbourhoods in Toronto.
@@ -51,7 +60,7 @@ After apply kmeans clustering on the housing data, cluster 2 had the lowest hous
 | 2 | 6 | 1064.1667 |
 
 
-## Analyzing Results
+## Summary
 
 - <b>Most Desirable Neighbourhoods:</b> These neighbourhoods should be considered if you are looking for `less expensive` apartments as well as a `low crime `and `unemployment rate`. Some of the most desirable neighbourhoods in Toronto are: **Banbury-Don Mills**, **Etobicoke West Mall**, **Runnymede-Bloor West Village** etc.
 
