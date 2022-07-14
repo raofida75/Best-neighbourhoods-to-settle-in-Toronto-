@@ -12,12 +12,20 @@
 
 ## Table of Contents
 
-1. [Datasets](#datasets)     
-2. [Metric for a desirable neighbourhood](#metric-for-a-desirable-neighbourhood)  
-3. [Methodology](#methodology) 
-4. [Results](#results)
-5. [Summary](#summary)
+1. [Requirements](#requirements)
+2. [Datasets](#datasets)     
+3. [Metrics for a desirable neighbourhood](#metrics-for-a-desirable-neighbourhood)  
+4. [Methodology](#methodology) 
+5. [Results](#results)
+6. [Summary](#summary)
 
+## Requirements
+- pandas
+- numpy
+- geopandas
+- sklearn
+- request
+- plotly
 
 ## Datasets
 
@@ -34,7 +42,7 @@ Metrics to be considered when grouping neighbourhoods include:
 
 ## Methodology
 
-### <i> Part - I : CLustering wrt to the number of venues</i>
+### <i> Part - I : Clustering wrt to the number of venues</i>
 - Use Foursquare API to get top 100 venues in each neighbourhood of Toronto. 
 - Clean the venue categories by grouping the relevant categories together using this <a href="https://developer.foursquare.com/docs/categories" target="_blank"><b>link: </b></a>
 - Extract the essential venues such as Cafe, Restaurant, Park etc. 
