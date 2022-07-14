@@ -12,13 +12,10 @@
 
 ## Datasets
 
-<b> Toronto neighbourhood profile dataset </b>: It contains various characteristics such as neighbourhood ID, total population, and so on for 140 neighbourhoods in Toronto.
-
-<b> Neighbourhood.geojson dataset</b>: It contains the longitude and latitude of each neighbourhood.
-
-<b> Neighbourhood crime rates </b>: It contains the crime rate for different offences in each neighbourhood. 
-
-<b> Housing rent dataset </b>: This dataset contains the median housing rent for 1 bedroom in each neighbourhood.
+- <b> neighbourhood-profiles-2016-140-model.csv </b>: It contains various characteristics such as neighbourhood ID, total population, and so on for 140 neighbourhoods in Toronto.
+- <b> Neighbourhood.geojson</b>: It contains the longitude and latitude of each neighbourhood.
+- <b> neighbourhood-crime-rates - 4326.csv </b>: It contains the crime rate for different offences in each neighbourhood. 
+- <b> housing.xlsx</b>: This dataset contains the median housing rent for 1 bedroom in each neighbourhood.
 
 ## Metrics for a desirable neighbourhood
 
@@ -55,11 +52,12 @@ After apply kmeans clustering on the housing data, cluster 2 had the lowest hous
 
 
 ## Analyzing Results
-<b>Most Desirable Neighbourhoods:</b> These neighbourhoods should be considered if you are looking for `less expensive` apartments as well as a `low crime `and `unemployment rate`. Some of the most desirable neighbourhoods in Toronto are: **Banbury-Don Mills**, **Etobicoke West Mall**, **Runnymede-Bloor West Village** etc.
 
-Desirable Neighbourhoods with large number of venues : **Greenwood-Coxell** is the only neighbourhood with a `large number of venues` while also having a `low crime` and `unemployment rate`. Furthermore, the rent in this area is also under $1700.
+- <b>Most Desirable Neighbourhoods:</b> These neighbourhoods should be considered if you are looking for `less expensive` apartments as well as a `low crime `and `unemployment rate`. Some of the most desirable neighbourhoods in Toronto are: **Banbury-Don Mills**, **Etobicoke West Mall**, **Runnymede-Bloor West Village** etc.
 
-Neighbourhoods with a large amount of venues: Only 5% of Toronto neighbourhoods have high venue, with the majority of them having either a high crime rate or a high unemployment rate with the exception of Greenwood-Coxell. Some of these neighbourhoods are: **Agincourt South-Malvern West, Flemingdon Park, Thistletown-Beaumond Heights** etc.
+- Desirable Neighbourhoods with large number of venues : **Greenwood-Coxell** is the only neighbourhood with a `large number of venues` while also having a `low crime` and `unemployment rate`. Furthermore, the rent in this area is also under <i>$1700</i>.
 
-Least Desirable Neighbourhoods: Avoid these neighbourhoods if possible because of `high crime rates` and `unemployment`. Almost **50%** of the neighbourhoods lie in this category. 
+- Neighbourhoods with a large amount of venues: Only <i>5%</i> of Toronto neighbourhoods have high venue, with the majority of them having either a high crime rate or a high unemployment rate with the exception of Greenwood-Coxell. Some of these neighbourhoods are: **Agincourt South-Malvern West, Flemingdon Park, Thistletown-Beaumond Heights** etc.
+
+- Least Desirable Neighbourhoods: Avoid these neighbourhoods if possible because of `high crime rates` and `unemployment`. Almost <i>50%</i> of the neighbourhoods lie in this category. 
 
